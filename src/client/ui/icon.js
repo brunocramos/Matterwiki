@@ -3,9 +3,7 @@ import feather from "feather-icons";
 
 const Icon = props => {
   const { type } = props;
-  let size;
-  if (!props.size) size = 24;
-  else size = props.size;
+  const size = props.size || 24;
 
   return (
     <span
