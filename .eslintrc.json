@@ -25,6 +25,7 @@
     "react/prop-types": 0,
     "react/sort-comp": 0,
     "react/no-find-dom-node": 0,
+    "react/prefer-stateless-function": 0,
     // JS is fine too!
     "react/jsx-filename-extension": 0,
     "function-paren-newline": 0,

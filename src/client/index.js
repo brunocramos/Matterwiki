@@ -3,7 +3,7 @@ import { render } from "react-dom";
 import { HashRouter as Router, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 
-// For `Promise`, Array.from and other fun stuff
+// For `Promise`, `Array.from` and other fun stuff
 // TODO replace this with core-js and use the stuff you just need
 import "babel-polyfill";
 

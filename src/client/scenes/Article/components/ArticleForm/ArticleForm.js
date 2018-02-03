@@ -65,8 +65,6 @@ class ArticleForm extends React.Component {
     }
   };
 
-  getEditorContent = () => JSON.stringify(this.editor.getRawContent());
-
   render() {
     const { edit } = this.state;
     const WikiEditorProps = Object.assign(
@@ -76,9 +74,9 @@ class ArticleForm extends React.Component {
     );
 
     return (
-      <Form className="new-article" onSubmit={this.onSubmit}>
+      <Form className="new-article">
         <Col sm={12}>
-          <FormGroup>
+          {/* <FormGroup>
             <FormControl
               type="text"
               name="title"
@@ -87,26 +85,26 @@ class ArticleForm extends React.Component {
               value={this.state.title}
               onChange={this.onChange}
             />
-          </FormGroup>
+          </FormGroup> */}
           <FormGroup>
             <WikiEditor {...WikiEditorProps} />
           </FormGroup>
-          <FormGroup>
+          {/* <FormGroup>
             <TopicChooser onChange={this.onChange} value={this.state.topic_id} />
           </FormGroup>
           {this.props.article && (
             <FormGroup>
               <WhatChanged onChange={this.onChange} value={this.state.change_log} />
             </FormGroup>
-          )}
+          )} */}
         </Col>
         <Clearfix />
         <br />
-        <Col sm={12}>
+        {/* <Col sm={12}>
           <Button type="submit" block>
             {`${edit ? "Update" : "Create"} Article`}
           </Button>
-        </Col>
+        </Col> */}
       </Form>
     );
   }
