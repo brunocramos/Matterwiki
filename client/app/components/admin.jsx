@@ -244,7 +244,7 @@ class Admin extends React.Component {
                         <input type="email" className="form-control" ref="user_email" id="inputUserEmail" placeholder="Email" />
                       </div>
                       <div className="col-sm-12 form-group">
-                        <input type="password" className="form-control" ref="user_password" id="inputUserPassword" placeholder="Password" />
+                        <input type="password" className="form-control" ref="user_password" id="inputUserPassword" placeholder="Senha" />
                       </div>
                       <div className="col-sm-12 form-group">
                         <button onClick={this.addUser} className="btn btn-default btn-block btn-lg">Adicionar Usuário</button>

@@ -63,7 +63,7 @@ module.exports = function(app) {
                 res.json({
                   error: {
                     error: true,
-                    message: 'Email or Password is wrong'
+                    message: 'E-mail ou senha inválidos.'
                   },
                   code: 'B119',
                   data: {

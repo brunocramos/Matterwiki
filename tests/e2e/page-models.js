@@ -53,7 +53,7 @@ export class LoginPage {
     constructor () {
         this.email    = Selector('#inputEmail');
         this.password = Selector('#inputPassword');
-        this.signIn   = Selector('button').withText('Sign in');
+        this.signIn   = Selector('button').withText('Entrar');
 
         this.userNotFoundAlert = Selector('.s-alert-error', { visibilityCheck: true }).withText('User not found');
     }

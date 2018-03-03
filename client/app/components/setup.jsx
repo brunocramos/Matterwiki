@@ -56,19 +56,19 @@ class Setup extends React.Component {
       <div className="col-md-6">
         <form>
           <div className="col-sm-12 form-group">
-            <input type="text" className="form-control" ref="user_name" id="inputUserName" placeholder="Name" />
+            <input type="text" className="form-control" ref="user_name" id="inputUserName" placeholder="Nome" />
           </div>
           <div className="col-sm-12 form-group">
-            <input type="text" className="form-control" ref="user_about" id="inputUserAbout" placeholder="About" />
+            <input type="text" className="form-control" ref="user_about" id="inputUserAbout" placeholder="Sobre" />
           </div>
       <div className="col-sm-12 form-group">
         <input type="email" className="form-control" ref="user_email" id="inputUserEmail" placeholder="Email" />
       </div>
       <div className="col-sm-12 form-group">
-        <input type="password" className="form-control" ref="user_password" id="inputUserPassword" placeholder="Password" />
+        <input type="password" className="form-control" ref="user_password" id="inputUserPassword" placeholder="Senha" />
       </div>
       <div className="col-sm-12 form-group">
-        <button onClick={this.handleSignUp} className="btn btn-default btn-block btn-lg">Setup My Account</button>
+        <button onClick={this.handleSignUp} className="btn btn-default btn-block btn-lg">Criar conta</button>
       </div>
     </form>
       </div>

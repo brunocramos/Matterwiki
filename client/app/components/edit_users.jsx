@@ -91,7 +91,7 @@ class EditUser extends React.Component {
                             <input type="text" className="form-control" ref="user_email" id="inputUserName" placeholder="Email" value={this.state.email} onChange={this.handleChange} />
                           </div>
                           <div className="col-sm-12 form-group">
-                            <input type="password" className="form-control" ref="user_password" id="inputUserName" placeholder="Password" value={this.state.password} onChange={this.handleChange} />
+                            <input type="password" className="form-control" ref="user_password" id="inputUserName" placeholder="Senha" value={this.state.password} onChange={this.handleChange} />
                           </div>
                       <div className="col-sm-12 form-group">
                         <button onClick={this.editUser} className="btn btn-default btn-block btn-lg">Atualizar Usuário</button>

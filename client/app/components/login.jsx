@@ -52,10 +52,10 @@ class Login extends React.Component {
           <input type="email" className="form-control" id="inputEmail" placeholder="Email" />
         </div>
         <div className="col-sm-12 form-group">
-          <input type="password" className="form-control" id="inputPassword" placeholder="Password" />
+          <input type="password" className="form-control" id="inputPassword" placeholder="Senha" />
         </div>
         <div className="col-sm-12 form-group">
-          <button onClick={this.handleSubmit} className="btn btn-default btn-block btn-lg">Sign in</button>
+          <button onClick={this.handleSubmit} className="btn btn-default btn-block btn-lg">Entrar</button>
         </div>
       </form>
       </div>
