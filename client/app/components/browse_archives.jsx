@@ -51,7 +51,7 @@ class BrowseArchives extends React.Component {
         <div className="custom-collapse">
           <div className="visible-xs">
         <button className="collapse-toggle btn btn-default" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-collapse">
-          View Archives
+          Ver histórico
          </button>
         <br/>
         <br/>

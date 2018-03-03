@@ -112,7 +112,7 @@ export class NewArticlePage extends BaseLayoutPage {
 
         this.title                 = Selector('.new-article .input-title');
         this.editor                = Selector('trix-editor');
-        this.createArticleBtn      = Selector('button').withText('Create Article');
+        this.createArticleBtn      = Selector('button').withText('Criar Artigo');
         this.articlePublishedModal = new ArticlePublishedModal();
     }
 }

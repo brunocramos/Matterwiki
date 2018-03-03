@@ -9,7 +9,7 @@ class Loader extends React.Component {
   componentDidMount() {
     var that = this;
     this.timeout = setTimeout(function(){
-      that.setState({message: "There seems to be a problem in processing your request. Please try again." });
+      that.setState({message: "Não foi possível processar sua requisição. Por favor, tente novamente." });
     }, 10000);
   }
 

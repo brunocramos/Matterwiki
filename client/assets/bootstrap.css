@@ -5,7 +5,7 @@
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
-@import url('https://fonts.googleapis.com/css?family=Muli:300,400');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 html {
   font-family: sans-serif;
@@ -280,7 +280,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Muli", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #4d4d4d;
@@ -295,12 +295,12 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #ff0066;
+  color: #b8860b;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #ff0066;
+  color: #b8860b;
   text-decoration: none;
 }
 a:focus {
@@ -2240,24 +2240,25 @@ fieldset[disabled] a.btn {
 }
 .btn-default {
   color: #fff;
-  background-color: #ff0066;
-  border: 1px solid #da045a;
+  background-color: #b8860b;
+  border: 1px solid #b8860b;
+    border-radius: 3px;
 }
 .btn-default:focus,
 .btn-default.focus {
   color: #fff;
-  background-color: #da045a;
+  background-color: #b8860b;
 }
 
 .btn-default:hover {
   color: #fff;
-  background-color: #da045a;
+  background-color: #b8860b;
 }
 .btn-default:active,
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   color: #fff;
-  background-color: #ff0066;
+  background-color: #b8860b;
 }
 .btn-default:active:hover,
 .btn-default.active:hover,
@@ -2269,7 +2270,7 @@ fieldset[disabled] a.btn {
 .btn-default.active.focus,
 .open > .dropdown-toggle.btn-default.focus {
   color: #fff;
-  background-color: #ff0066;
+  background-color: #b8860b;
 }
 .btn-default:active,
 .btn-default.active,
@@ -2285,7 +2286,7 @@ fieldset[disabled] .btn-default:focus,
 .btn-default.disabled.focus,
 .btn-default[disabled].focus,
 fieldset[disabled] .btn-default.focus {
-  background-color: #ff0066;
+  background-color: #b8860b;
 }
 .btn-default .badge {
   color: #fff;
@@ -3159,7 +3160,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:focus {
   text-decoration: none;
   background-color: transparent;
-  border-bottom: 1px solid #ff0066;
+  border-bottom: 1px solid #b8860b;
 }
 .nav > li.disabled > a {
   color: #777;

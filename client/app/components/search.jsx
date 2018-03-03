@@ -68,7 +68,7 @@ class Search extends React.Component {
       return(<div>
             <div className="result-info">
               <p className="help-block">
-                We found {this.state.articles.length} articles for your query
+                Foi encontrado {this.state.articles.length} artigo(s) para sua busca.
               </p>
             </div>
             {(this.state.articles.length>0) ?
@@ -79,7 +79,7 @@ class Search extends React.Component {
                 <Link to={"/article/"+article.id} >{article.title}</Link>
               </div>
               <div className="article-item-description">
-                Last updated on {new Date(article.updated_at).toDateString()}
+                Última atualização em {new Date(article.updated_at).toDateString()}
               </div>
               <hr className="article-separator"></hr>
             </div>
@@ -88,7 +88,7 @@ class Search extends React.Component {
         :
         <div className="no-results">
           <i className="fa fa-frown-o"></i>
-          <p>Please try again with another query</p>
+          <p>Por favor, tente uma nova busca.</p>
         </div>
 
         }

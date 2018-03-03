@@ -78,7 +78,7 @@ class Admin extends React.Component {
           var users = that.state.users;
           users.push(response.data);
           that.setState({users: users});
-          Alert.success('User has been added');
+          Alert.success('Usuário adicionado.');
       }
     });
   }
@@ -111,7 +111,7 @@ class Admin extends React.Component {
           var topics = that.state.topics;
           topics.push(response.data);
           that.setState({topics: topics});
-          Alert.success('Topic has been added');
+          Alert.success('Assunto adicionado.');
       }
     });
   }
@@ -140,7 +140,7 @@ class Admin extends React.Component {
            return e.id != id;
         });
         that.setState({topics: topics});
-        Alert.success('Topic has been deleted');
+        Alert.success('Assunto deletado.');
       }
     });
   }
@@ -148,7 +148,7 @@ class Admin extends React.Component {
 
   deleteUser(id,e) {
     e.preventDefault();
-    var del = confirm("Deleting the user will move all of his/her articles to the Admin. Are you sure?");
+    var del = confirm("Ao remover o usuário moverá todos os seus artigo para o Admin. Você tem certeza?");
     if(del==true) {
         var myHeaders = new Headers({
             "Content-Type": "application/x-www-form-urlencoded",
@@ -172,7 +172,7 @@ class Admin extends React.Component {
                return e.id != id;
             });
             that.setState({users: users});
-            Alert.success('User has been deleted');
+            Alert.success('Usuário deletado.');
           }
         });
     }
@@ -187,31 +187,31 @@ class Admin extends React.Component {
           <div>
             <div className="row container">
           <div className="col-md-6">
-            <button className="btn btn-default" data-toggle="modal" data-target="#addTopic">Add Topic</button>
+            <button className="btn btn-default" data-toggle="modal" data-target="#addTopic">Adicionar Assunto</button>
             <br/>
             <br/>
               <div className="list-group bordered-scroll-box">
                   {this.state.topics.map(topic => (
                     <div key={topic.id} href="#" className="list-group-item">
-                      {(topic.id !== 1)? <span className="pull-right">
-                      <Link to={'topic/edit/'+topic.id} className="btn btn-default">Edit</Link>
-                      <button className="btn btn-default" type="button" onClick={(e) => this.deleteTopic(topic.id,e)}>Delete</button>
-                      </span>: ''}
+                      <span className="pull-right">
+                      <Link to={'topic/edit/'+topic.id} className="btn btn-default">Editar</Link>
+                      <button className="btn btn-default" type="button" onClick={(e) => this.deleteTopic(topic.id,e)}>Deletar</button>
+                      </span>
                       <h4 className="list-group-item-heading">{topic.name}</h4>
                       <p className="list-group-item-text">{topic.description}</p>
                     </div>
                 ))}</div>
           </div>
           <div className="col-md-6">
-            <button className="btn btn-default" data-toggle="modal" data-target="#addUser">Add User</button>
+            <button className="btn btn-default" data-toggle="modal" data-target="#addUser">Adicionar Usuário</button>
             <br/>
             <br/>
             <div className="list-group bordered-scroll-box">
                   {this.state.users.map(user => (
                     <div key={user.id} href="#" className="list-group-item">
                       {(user.id!=1) ? <span className="pull-right">
-                        <Link to={'user/edit/'+user.id} className="btn btn-default">Edit</Link>
-                        <button className="btn btn-default" type="button"onClick={(e) => this.deleteUser(user.id,e)}>Delete</button>
+                        <Link to={'user/edit/'+user.id} className="btn btn-default">Editar</Link>
+                        <button className="btn btn-default" type="button"onClick={(e) => this.deleteUser(user.id,e)}>Deletar</button>
                       </span> : ''}
                       <h4 className="list-group-item-heading">{user.name}</h4>
                       <p className="list-group-item-text">{user.about}</p>
@@ -231,7 +231,7 @@ class Admin extends React.Component {
                   <div className="row">
 
                     <div className="col-md-6 col-sd-12">
-                      <h1><b>Add User</b></h1>
+                      <h1><b>Adicionar Usuário</b></h1>
                       <br/>
                         <form>
                           <div className="col-sm-12 form-group">
@@ -247,7 +247,7 @@ class Admin extends React.Component {
                         <input type="password" className="form-control" ref="user_password" id="inputUserPassword" placeholder="Password" />
                       </div>
                       <div className="col-sm-12 form-group">
-                        <button onClick={this.addUser} className="btn btn-default btn-block btn-lg">Add User</button>
+                        <button onClick={this.addUser} className="btn btn-default btn-block btn-lg">Adicionar Usuário</button>
                       </div>
                     </form>
                     </div>
@@ -271,7 +271,7 @@ class Admin extends React.Component {
                   <div className="row">
 
                     <div className="col-md-6 col-sd-12">
-                      <h1><b>Add Topic</b></h1>
+                      <h1><b>Adicionar Assunto</b></h1>
                       <br/>
                         <form>
                           <div className="col-sm-12 form-group">
@@ -281,7 +281,7 @@ class Admin extends React.Component {
                             <input type="text" className="form-control" ref="topic_description" id="inputTopicAbout" placeholder="Description" />
                           </div>
                       <div className="col-sm-12 form-group">
-                        <button onClick={this.addTopic} className="btn btn-default btn-block btn-lg">Add Topic</button>
+                        <button onClick={this.addTopic} className="btn btn-default btn-block btn-lg">Adicionar Assunto</button>
                       </div>
                     </form>
                     </div>

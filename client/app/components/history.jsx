@@ -28,11 +28,11 @@ class ArticleHistory extends React.Component {
       return(
         <div className="row">
           <div className="col-md-3">
-            <label>Archives</label>
+            <label>Histórico</label>
           <BrowseArchives archiveChange={this.archiveUpdate} articleId={this.props.params.articleId} />
           </div>
           <div className="col-md-9">
-            <label>View Article</label>
+            <label>Ver Artigo</label>
           <SimpleArticle archiveId={this.state.archive_id} />
           </div>
         </div>

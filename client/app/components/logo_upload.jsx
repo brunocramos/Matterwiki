@@ -43,7 +43,7 @@ class LogoUpload extends React.Component {
         <hr/>
         <form method="POST" encType="multipart/form-data" onSubmit={this.handleUpload}>
             <input type="file" name="logo" ref="logo" className="form-control"/>
-            <p className="help-block">Please reload the page for the changes to reflect throughout the site.</p>
+            <p className="help-block">Por favor, recarregue a página para ver as mudanças.</p>
             <br/>
             <input type="submit" value="Upload Logo" className="btn btn-default btn-block btn-lg"/>
         </form>

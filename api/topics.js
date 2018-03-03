@@ -96,7 +96,7 @@ module.exports = function(app) {
           message: ''
         },
         code: 'B129',
-        data: topic.related('articles')
+        data: topic ? topic.related('articles') : null,
       });
     })
     .catch(function(error){

@@ -31,7 +31,7 @@ module.exports =  function(app){
         body: req.body.body,
         topic_id: req.body.topic_id,
         user_id: req.body.user_id,
-        what_changed: "Another drop in the ocean of knowledge"
+        what_changed: "Nenhuma informação."
       }).then( function (article) {
         res.json({
           error: {
@@ -261,7 +261,7 @@ module.exports =  function(app){
           message: ''
         },
         code: 'B115',
-        data: article.related('archives')
+        data: article ? article.related('archives') : null,
       });
     })
     .catch(function (error) {

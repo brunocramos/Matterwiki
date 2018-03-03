@@ -39,13 +39,13 @@ class EditArticle extends React.Component {
             if(response.error.error)
               Alert.error(response.error.message);
             else {
-                Alert.success("Article has been successfully saved");
+                Alert.success("Artigo atualizado com sucesso.");
                 hashHistory.push('article/'+that.props.params.articleId);
             }
           });
     }
     else {
-      Alert.error("Article Body, Title, Topic and Change Info is required.");
+      Alert.error("É necessário preencher o título, conteúdo, assunto e mudanças.");
     }
   }
 
@@ -112,10 +112,10 @@ class EditArticle extends React.Component {
            <div className="row">
             <div className="col-md-12 new-article-form">
               <trix-toolbar id="my_toolbar"></trix-toolbar>
-          <trix-editor toolbar="my_toolbar" input="my_input" placeholder="Start writing here...." class="input-body"></trix-editor>
+          <trix-editor toolbar="my_toolbar" input="my_input" placeholder="Comece a digitar aqui.." class="input-body"></trix-editor>
           <input id="my_input" type="hidden" value={this.state.body} ref="body" onChange={this.handleChange}/>
                  <br/>
-                 <label>Choose topic</label>
+                 <label>Escolha o assunto</label>
                  <select className="form-control topic-select" ref="topic" defaultValue={this.state.topic_id}>
                    {this.state.topics.map(topic => (
                      <option value={topic.id} key={topic.id}>{topic.name}</option>
@@ -123,21 +123,21 @@ class EditArticle extends React.Component {
                  </select>
                  <br/>
                  <div className="whatwrapper">
-                 <label>What improvements did you make in this edit?</label>
+                 <label>O que você mudou ao editar?</label>
                  <textarea
                    ref="what_changed"
                    className="form-control what_changed what"
                    id="what"
-                   placeholder="Example: Fixed a typo. It's grammer not grammar"
+                   placeholder="Exemplo: corrigi um erro, atualizei informação x"
                     />
-                  <p className="help-block">Keep it short and descriptive :)</p>
+                  <p className="help-block">Descreva de forma simples :)</p>
                   </div>
                   <br/>
             </div>
 
         <div className="row">
           <div className="col-md-12">
-            <button className="btn btn-default btn-block btn-lg" onClick={this.handleSubmit}>Update Article</button>
+            <button className="btn btn-default btn-block btn-lg" onClick={this.handleSubmit}>Atualizar Artigo</button>
           </div>
         </div>
       </div>

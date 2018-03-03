@@ -17,7 +17,7 @@ class SearchForm extends React.Component {
       return(
         <form className="navbar-form navbar-right" onSubmit={this.searchWiki}>
           <div className="form-group">
-            <input type="text" className="form-control search-input" placeholder="Search" ref="search"/>
+            <input type="text" className="form-control search-input" placeholder="Procurar" ref="search"/>
           </div>
           <button type="submit" className="btn search-button"><i className="fa fa-search"></i></button>
         </form>

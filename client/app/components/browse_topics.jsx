@@ -50,7 +50,7 @@ class BrowseTopics extends React.Component {
         <div className="custom-collapse">
           <div className="visible-xs">
         <button className="collapse-toggle btn btn-default" type="button" data-toggle="collapse" data-parent="custom-collapse" data-target="#side-menu-collapse">
-          View Topics
+          Ver Assuntos
          </button>
         <br/>
         <br/>

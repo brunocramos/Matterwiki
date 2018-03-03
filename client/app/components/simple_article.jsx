@@ -55,7 +55,7 @@ class SimpleArticle extends React.Component {
             );
     }
     else {
-      return <center><p className="help-block">Please select the archive</p></center>;
+      return <center><p className="help-block">Por favor, selecione o item no histórico.</p></center>;
     }
   }
 }

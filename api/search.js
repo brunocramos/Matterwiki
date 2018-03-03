@@ -39,7 +39,7 @@ module.exports = function(app) {
           res.status(500).json({
             error: {
               error: true,
-              message: "There was an error performing the search operation. Please try again."
+              message: "Não foi possível processar sua busca. Por favor, tente novamente."
             },
             code: 'B132',
             data: {

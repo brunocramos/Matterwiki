@@ -66,7 +66,7 @@ class BrowseArticles extends React.Component {
     if(this.state.loading)
       return <Loader/>;
     if(this.state.articles.length<1) {
-      return <p className="help-block center-align">There are no articles under this topic</p>;
+      return <p className="help-block center-align">Não há artigos neste assunto.</p>;
     }
     else {
       return(<div>
@@ -77,7 +77,7 @@ class BrowseArticles extends React.Component {
                 <Link to={"/article/"+article.id} >{article.title}</Link>
               </div>
               <div className="article-item-description">
-                Last updated on {new Date(article.updated_at.replace(' ','T')).toDateString()}
+                Última atualização em {new Date(article.updated_at.replace(' ','T')).toDateString()}
               </div>
               <hr className="article-separator"></hr>
             </div>

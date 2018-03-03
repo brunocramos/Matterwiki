@@ -61,7 +61,7 @@ class EditTopic extends React.Component {
       if(response.error.error)
         Alert.error(response.error.message);
       else {
-          Alert.success('Topic has been edited');
+          Alert.success('Assunto atualizado.');
           hashHistory.push('admin');
       }
     });
@@ -76,7 +76,7 @@ class EditTopic extends React.Component {
           <div>
                   <div className="row">
                     <div className="col-md-12 col-sd-12">
-                      <h1><b>Update Topic</b></h1>
+                      <h1><b>Atualizar Assunto</b></h1>
                       <br/>
                         <form>
                           <div className="col-sm-12 form-group">
@@ -86,7 +86,7 @@ class EditTopic extends React.Component {
                             <input type="text" className="form-control" ref="topic_description" id="inputTopicAbout" placeholder="Description" value={this.state.description} onChange={this.handleChange}/>
                           </div>
                       <div className="col-sm-12 form-group">
-                        <button onClick={this.editTopic} className="btn btn-default btn-block btn-lg">Update Topic</button>
+                        <button onClick={this.editTopic} className="btn btn-default btn-block btn-lg">Atualizar Assunto</button>
                       </div>
                     </form>
                     </div>

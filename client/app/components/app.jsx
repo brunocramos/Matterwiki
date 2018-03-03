@@ -55,11 +55,11 @@ class App extends React.Component {
                 </li> :
                 ''
               }
-             <li><Link to="article/new" className="">New Article
+             <li><Link to="article/new" className="">Novo Artigo
               </Link>
             </li>
             <li>
-              <a href="" onClick={this.handleLogout} >Logout</a>
+              <a href="" onClick={this.handleLogout} >Sair</a>
             </li>
             </ul>
             <SearchForm />
@@ -70,7 +70,7 @@ class App extends React.Component {
           {that.props.children}
           </div>
         <div className="footer center-align">
-          <p className="help-block">Powered by <a href="http://matterwiki.com">Matterwiki</a></p>
+          <p className="help-block small">Powered by <a href="http://matterwiki.com">Matterwiki</a></p>
         </div>
            <Alert stack={{limit: 3}} position='bottom'/>
     </div>
